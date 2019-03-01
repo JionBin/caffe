@@ -70,6 +70,7 @@ COMMON_FLAGS += -DNDEBUG -O2 -std=c++11
 ```
 c. OpenCV `CV_LOAD_IMAGE_COLOR CV_LOAD_IMAGE_GRAYSCALE`错误
 在OCV4.0.1中，其对应的为`cv::IMREAD_COLOR cv::IMREAD_GRAYSCALE`，把源码中的对应的宏替换下即可
+
 6. 测试
 
 ```
