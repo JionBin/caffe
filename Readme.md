@@ -74,13 +74,23 @@ c. OpenCV `CV_LOAD_IMAGE_COLOR CV_LOAD_IMAGE_GRAYSCALE`错误
 6. 测试
 
 ```
+make all
 make test
 make runtest
+make pycaffe 
 ```
 `caffe::CPUDevice<float>(0 ms)` 错误
 
 ```
 export LC_ALL="C"
+```
+```
+import caffe 出现“syntax”错误
+这个错误往往是由于protobuf的版本问题，把版本切换为2.6.1就没问题了
+```
+```
+sudo pip uninstall protobuf
+再重装v2.6.1
 ```
         
 <!-- #AG_BRIEF_END# -->
